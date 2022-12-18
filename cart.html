@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROYAL PLACE</title>
+    <!-- Link thêm logo, icon -->
+    <link rel="icon" href="./images/HUFLIT Coffee.png">
+    <!-- Link thêm icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- CSS link  -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Responsive link -->
+    <link rel="stylesheet" href="./css/responsive.css">
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <!-- header section starts  -->
+
+    <header class="header navbar-fixed-top">
+
+        <a href="index.html" class="logo">
+            <img src="./images/HUFLIT Coffee.png" alt="">
+        </a>
+
+        <nav class="navbar">
+            <a href="./index.html">Trang chủ</a>
+            <a href="./about.html">Về chúng tôi</a>
+            <a href="./product.html">Thực Đơn</a>
+            <a href="./news.html">Sảnh tiệc</a>
+            <a href="./gallery.html">thư viện ảnh</a>
+            <a href="./contact.html">liên hệ</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="Tìm kiếm tại đây...">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+
+        <div class="cart-items-container">
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="images/typhany vàng.jpg" alt="">
+                <div class="content">
+                    <h3>Sảnh Tiffany Vàng</h3>
+                    <div class="price">120.000.000đ/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="images/thucdon1.jpg" alt="">
+                <div class="content">
+                    <h3>Thực đơn 1</h3>
+                    <div class="price">15.000.000đ/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="images/thucdon6.jpg" alt="">
+                <div class="content">
+                    <h3>Thực đơn 6</h3>
+                    <div class="price">15.000.000đ/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="images/hoa1.jpg" alt="">
+                <div class="content">
+                    <h3>Hoa trang trí</h3>
+                    <div class="price">10.000.000đ/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="images/hoa8.jpg" alt="">
+                <div class="content">
+                    <h3>Hoa dâu</h3>
+                    <div class="price">10.000.000đ/-</div>
+                </div>
+            </div>
+            <a href="./cart.html" class="btn">mua ngay</a>
+        </div>
+
+    </header>
+
+    <div class="cart-page">
+        <table>
+            <tr>
+                <th>Sản phẩm</th>
+                <th>Số lượng</th>
+                <th>Giá</th>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <a href="./product-item.html"><img src="./images/typhany vàng.jpg"></a>
+                        <div>
+                            <a href="./product-item.html">
+                                <p style="color: #eee;">Sảnh Tiffany Vàng</p>
+                            </a>
+                            <small>Giá: 120.000.000đ</small><br>
+                            <a href="">Xóa</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1" min="1"></td>
+                <td>49.000đ</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="./images/thucdon1.jpg">
+                        <div>
+                            <p>Thực đơn 1</p>
+                            <small>Giá: 10.000.000đ</small><br>
+                            <a href="">Xóa</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1" min="1"></td>
+                <td>30.000đ</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="./images/thucdon6.jpg">
+                        <div>
+                            <p>Thực đơn 6</p>
+                            <small>Giá: 15.000.000đ</small><br>
+                            <a href="">Xóa</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1" min="1"></td>
+                <td>30.000đ</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="./images/hoa1.jpg">
+                        <div>
+                            <p>Hoa Trang trí</p>
+                            <small>Giá: 10.000.000đ</small><br>
+                            <a href="">Xóa</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1" min="1"></td>
+                <td>30.000đ</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="./images/hoa8.jpg">
+                        <div>
+                            <p>Hoa dâu</p>
+                            <small>Giá: 10.000.000đ</small><br>
+                            <a href="">Xóa</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1" min="1"></td>
+                <td>30.000đ</td>
+            </tr>
+        </table>
+
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Tổng tiền</td>
+                    <td>170.000.000đ</td>
+                </tr>
+                <tr>
+                    <td>Thuế</td>
+                    <td>20.000.000đ</td>
+                </tr>
+                <tr>
+                    <td>Thanh toán</td>
+                    <td>190.000.000đ</td>
+                </tr>
+
+            </table>
+        </div>
+        <div class="total-price">
+            <a href="#" class="btn">Thanh toán &#8594;</a>
+        </div>
+    </div>
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <ul class="footer__list">
+                    <div class="footer__title">
+                        Chăm sóc khách hàng
+                    </div>
+                    <li class="footer__item"><a href="https://huflit.edu.vn/">Trung tâm trợ giúp</a></li>
+                    <li class="footer__item"><a href="https://huflit.edu.vn/">Hướng dẫn mua hàng</a></li>
+                    <li class="footer__item"><a href="https://huflit.edu.vn/">Thanh toán</a></li>
+                    <li class="footer__item"><a href="https://huflit.edu.vn/">Vận chuyển</a></li>
+                    <li class="footer__item"><a href="https://huflit.edu.vn/">Chăm sóc khách hàng</a></li>
+                    <li class="footer__item"><a href="https://huflit.edu.vn/">Chính sách bảo hành</a></li>
+
+                </ul>
+            </div>
+
+            <div class="box">
+                <ul class="footer__list">
+                    <div class="footer__title">
+                        Về Royal Place
+                    </div>
+                    <li class="footer__item"><a href="https://huflit.edu.vn/">Giới thiệu về ROYAL PLACE</a></li>
+                    <li class="footer__item"><a href="https://huflit.edu.vn/">Tuyển dụng</a></li>
+                    <li class="footer__item"><a href="https://huflit.edu.vn/">Điều khoản</a></li>
+                    <li class="footer__item"><a href="https://huflit.edu.vn/">Chính sách bảo mật</a></li>
+                    <li class="footer__item"><a href="https://huflit.edu.vn/">Chính hãng</a></li>
+                    <li class="footer__item"><a href="https://huflit.edu.vn/">Flash Sales</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <ul class="footer__list">
+                    <div class="footer__title">
+                        Theo dõi chúng tôi trên
+                    </div>
+                    <li class="footer__item"><i class="fab fa-facebook-f"></i><a href="https://www.facebook.com/">facebook</a></li>
+                    <li class="footer__item"><i class="fab fa-twitter"></i><a href="https://twitter.com/">twitter</a></li>
+                    <li class="footer__item"><i class="fab fa-instagram"></i><a href="https://www.instagram.com/">instagram</a></li>
+                    <li class="footer__item"><i class="fab fa-youtube"></i><a href="https://www.youtube.com/">youtube</a></li>
+                    <li class="footer__item"><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/">linkedin</a></li>
+            </div>
+
+        </div>
+    </section>
+    <div class="credit">&copy;ROYAL PLACE | all rights reserved</div>
+
+
+
+    <!-- footer section ends -->
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
